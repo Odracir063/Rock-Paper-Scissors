@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 class="titulo">Piedra Papel Tijera</h1>
+
+    <div class="juegocss" id="juego">
+
+        <img src="piedra.png" id="piedra" alt="piedra" height="150" width="150" onclick="Juego(this)">
+        <img src="papel.png" id="papel" alt="papel" height="150" width="150" onclick="Juego(this)">
+        <img src="tijera.png" id='tijera' alt="tijera" height="150" width="150" onclick="Juego(this)">
+
+    </div>
+
+    <div class="botoncss">
+
+        <button class="resetcss" id="reset" onclick="reset()">Reset</button>
+
+    </div>
+
+    <div class="resultadoscss">
+
+        <table>
+            <tr>
+                <th>Victorias</th>
+                <th>Derrotas</th>
+                <th>Empates</th>
+            </tr>
+            <tr>
+
+                <td><span id="victorias">0</span></td>
+                <td><span id="derrotas">0</span></td>
+                <td><span id="empates">0</span></td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
